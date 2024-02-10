@@ -87,7 +87,8 @@ We were using the model stable-diffusion-xl-base-1.0 and like before, this is ju
 Now we’ll install Torch, an open-source machine learning library which our various models will use to operate.\
 Run these commands:\
 `pip uninstall torch`\
-`pip3 install --no-cache https://developer.download.nvidia.com/compute/redist/jp/v60dp/pytorch/torch-2.2.0a0+81ea7a4.nv23.12-cp310-cp310-linux_aarch64.whl`\
+`pip3 install --no-cache`\
+'https://developer.download.nvidia.com/compute/redist/jp/v60dp/pytorch/torch-2.2.0a0+81ea7a4.nv23.12-cp310-cp310-linux_aarch64.whl`\
 The first command actually uninstalls Torch. We found this necessary, because a version of Torch was already installed, and the NVIDIA Jetson requires a specific architecture of Torch.\
 The other two commands install the version of Torch we want.
 
