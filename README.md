@@ -67,10 +67,11 @@ The first two commands install dependencies, and the last one installs sounddevi
 
 **Step Four: LLaMa 2**\
 Now for LLaMa 2. This is the most complicated step in our installation process, but don’t be discouraged - just run the following commands. Again, double check that your terminal is in the right place and remember to run them in the correct order!\
+'CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python'\
 `pip3 install huggingface-hub>=0.17.1`\
-This first command installs a package related to HuggingFace, which is the development platform we are using to deploy our models - Whisper, LLaMa 2, and Stable Diffusion - to our device.\
+The first command installs the version of LLaMa that we want. The other command installs a package related to HuggingFace, which is the development platform we are using to deploy our models - Whisper, LLaMa 2, and Stable Diffusion - to our device.\
 `huggingface-cli download TheBloke/Llama-2-13B-chat-GGUF llama-2-13b-chat.Q6_K.gguf --local-dir ./Models/Llama_Model/ --local-dir-use-symlinks False`\
-This command downloads LLaMa 2. We were using the model llama-2-13b-chat.Q6_K.gguf model, which is a version of LLaMa 2 trained on 13 billion parameters, along with some other specifications. You can find out more about this and other models here: https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF\
+This command downloads LLaMa 2. We were using the model llama-2-13b-chat.Q6_K.gguf model, which is a version of LLaMa 2 trained on 13 billion parameters, along with some other specifications. You can find out more about this and other models here: https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF \
 There are models trained on 7 billion, 13 billion, and 70 billion parameters. We are using a quantised version of a model trained on 13 billion parameters, as it is fast, performs well, and is less memory-intensive than other models. However, feel free to experiment with another model.
 
 **Step Five: Stable Diffusion**\
