@@ -44,9 +44,7 @@ Creating Arti is simple, as we’ve already written all the necessary code for y
 
 **Step One: Initial Setup**\
 Create a folder called Arti in your home directory. Then, create a new virtual environment within this folder. (Creating a virtual environment is important because the specific packages you’ll be installing in later steps may otherwise conflict with other projects.)\
-In general, you can create a virtual environment by executing this command in your code editor’s terminal:\
-`python -m venv /path/to/new/virtual/environment`\
-We will put our virtual environment directly into the Arti folder. Our code will do everything else related to folder structure.
+Create a new Python interpreter specifically for your project, and when prompted don't change any of the default settings, which will automatically create a virtual environment for you. We will put our virtual environment directly into the Arti folder. Our code will do everything else related to folder structure.
 
 **Step Two: Whisper**\
 First, we will download Whisper itself. We are using the model whisper-large-v3. If you want to learn more about Whisper and its various models, click here:  https://huggingface.co/openai/whisper-large-v3 \
