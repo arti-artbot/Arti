@@ -48,8 +48,7 @@ Create a new Python interpreter specifically for your project, and when prompted
 
 **Step Two: Whisper**\
 First, we will download Whisper itself. We are using the model whisper-large-v3. If you want to learn more about Whisper and its various models, click here:  https://huggingface.co/openai/whisper-large-v3 \
-We will now run some commands. Be careful to run them in your code editor’s terminal while in your project. Running these commands outside of your project means you will also run them outside of your virtual environment. This might cause project dependencies to conflict - which is not good!\
-Once you’ve confirmed that your terminal is set to operate within your project, run the following commands (in order):\
+We will now run some commands. Be careful to run them in your code editor’s terminal while in your project. Running these commands outside of your project means you will also run them outside of your virtual environment. This might cause project dependencies to conflict. Once you’ve confirmed that your terminal is set to operate within your project and virtual environment, run the following commands (in order):\
 `pip install --upgrade pip`\
 `pip install --upgrade git+https://github.com/huggingface/transformers.git accelerate datasets[audio]`\
 `huggingface-cli download openai/whisper-large-v3 --local-dir ./Models/Whisper_Model/`\
@@ -65,7 +64,7 @@ The first two commands install dependencies, and the last one installs sounddevi
 
 **Step Four: LLaMa 2**\
 Now for LLaMa 2. This is the most complicated step in our installation process, but don’t be discouraged - just run the following commands. Again, double check that your terminal is in the right place and remember to run them in the correct order!\
-'CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python'\
+`CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python`\
 `pip3 install huggingface-hub>=0.17.1`\
 The first command installs the version of LLaMa that we want. The other command installs a package related to HuggingFace, which is the development platform we are using to deploy our models - Whisper, LLaMa 2, and Stable Diffusion - to our device.\
 `huggingface-cli download TheBloke/Llama-2-13B-chat-GGUF llama-2-13b-chat.Q6_K.gguf --local-dir ./Models/Llama_Model/ --local-dir-use-symlinks False`\
