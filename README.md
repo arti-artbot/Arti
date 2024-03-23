@@ -13,7 +13,6 @@ We created Arti to constantly generate inspirational, meaningful, and relevant w
 - Overview
 - Project Specifications
 - Creating Arti
-- Downloadable Code
 - Examples
 - Notes
 - Troubleshooting
@@ -24,7 +23,7 @@ Arti turns your conversations into images over three steps:\
 First, it starts a new recording of a conversation every 60 seconds. This means the image will change every 60 seconds - you can adjust this according to your preferences. It will save the recording as an audio file and send it to Whisper. Whisper is an open-source speech-to-text software recently released by OpenAI, with automatic speech recognition built in. It will write the audio file into text.\
 Next, LLaMa 2, an open-source large language model similar to ChatGPT, will translate this raw text into a prompt which is more understandable for Stable Diffusion (our image generation model, also open-source). This step will allow Stable Diffusion to generate more accurate images representing the topic of the conversation.\
 Finally, Stable Diffusion will receive its prompt from LLaMa 2, and generate the image. In this way, your art bot will be able to generate images based on your conversation!\
-We won’t be writing code in this tutorial, but you can access it at the bottom of this page under the Downloadable Code section. However, please read through everything first - your device may not satisfy the specifications for this project, and you may not have everything set up on your device.\
+We won’t be writing code in this tutorial, but you can access it at the top of this Github page. However, please read through everything first - your device may not satisfy the specifications for this project, and you may not have everything set up on your device.\
 Since we didn’t want our conversations to have the potential to be shared, we stored everything in a local directory, which also enabled offline access.
 
 **Project Specifications**
@@ -90,14 +89,11 @@ The first command actually uninstalls Torch. We found this necessary, because a 
 The other two commands install the version of Torch we want.
 
 **Step Seven: Running the Code**\
-You’re ready to download and run our code! You can find this in the next section. Since you already have everything downloaded and set up, all you need to do is download the file arti.py and save it to the Arti folder. Simply click the Run button (usually found on the menu at the top of your code editor).\
+You’re ready to download and run our code! You can find our code right here at our GitHub page, simply clone this repository to your device. Remember to store everything directly in the Arti folder.\
 The first time you run our code, it will take a while to load up and generate the first image - this is because it has to set up everything you downloaded in the previous steps of this section. However, the next time everything will be downloaded and it will start recording within a few moments.\
 While it loads, be sure not to click anywhere on the screen (moving your mouse is fine).\
 When you run the program, you will see a splash screen while it generates the first image. This shouldn’t take more than a few minutes.\
 If you encounter any problems please see the Troubleshooting section located near the end of this tutorial. We haven’t listed every error, but tried to tackle the most common ones.
-
-**Downloadable Code**\
-You can find our code right here at our GitHub page, simply clone this repository to your device. Remember to store everything directly in the Arti folder.
 
 **Examples**\
 Following are a few of our favorite examples of the images Arti generated, along with the conversations taking place at those times.
