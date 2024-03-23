@@ -84,7 +84,7 @@ Now we’ll install Torch, an open-source machine learning library which our var
 Run these commands:\
 `pip uninstall torch`\
 `pip3 install --no-cache`\
-'https://developer.download.nvidia.com/compute/redist/jp/v60dp/pytorch/torch-2.2.0a0+81ea7a4.nv23.12-cp310-cp310-linux_aarch64.whl`\
+`https://developer.download.nvidia.com/compute/redist/jp/v60dp/pytorch/torch-2.2.0a0+81ea7a4.nv23.12-cp310-cp310-linux_aarch64.whl`\
 The first command actually uninstalls Torch. We found this necessary, because a version of Torch was already installed, and the NVIDIA Jetson requires a specific architecture of Torch.\
 The other two commands install the version of Torch we want.
 
