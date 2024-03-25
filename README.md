@@ -4,7 +4,7 @@
 **ARTI**
 
 
-Art comes in many beautiful forms, but you can only fit so many paintings on your wall. What looks interesting one day might fail to catch your attention the next. What if you could have infinitely diverse artwork generated every few minutes? What about artworked based on your conversations? What if it was completely powered by AI?
+Art comes in many beautiful forms, but you can only fit so many paintings on your wall. What looks interesting one day might fail to catch your attention the next. What if you could have infinitely diverse artwork generated every few minutes? What about art work based on your conversations? What if it was completely powered by AI?
 Welcome to this tutorial, where we will be showing you how to build Arti, your personal art-bot.\
 Arti will capture your conversations and create images in real time. It’s powered by many forms of Generative AI, which help it create accurate yet distinct images relatable to the conversation at hand. It’s also completely open-source, meaning that you can create your own art-bot with just a Jetson.\
 We created Arti to constantly generate inspirational, meaningful, and relevant works of art, and we hope you enjoy using it as much as we did. Let’s get started!
